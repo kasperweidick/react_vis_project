@@ -1,1 +1,1 @@
-# react_vis_project
+# This is the readme of the React-Vis project
