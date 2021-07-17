@@ -8,7 +8,6 @@ import fetchData from './helperfunctions/fetchData';
 import {useEffect} from "react";
 
 
-
 const App: React.FC = () => {
     useEffect(() => {
       fetchData();
