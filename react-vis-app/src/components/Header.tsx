@@ -12,7 +12,7 @@ justify-content: center;
 align-items: baseline;
 padding: 1em;
 margin-bottom: 2em;
-background-color: rgb(66, 143, 111);
+background-color: rgb(202, 180, 180);
 color: #fff;
 `
 
