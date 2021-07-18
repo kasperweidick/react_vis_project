@@ -1,9 +1,7 @@
 import styled from 'styled-components'
 import {
     MarkSeries,
-    VerticalBarSeries,
     XYPlot,
-    LineSeries,
     YAxis,
     XAxis
   } from "react-vis";
@@ -21,30 +19,15 @@ interface Props {
     barwidth: number,
 }
   
-const Plot: React.FC<Props> = ({data, height, width, barwidth}) => {
+const Plot: React.FC<Props> = ({data, height, width}) => {
     return (
-        
-            <StyledFlexWrapper>
-                <XYPlot height={height} width={width}>
-                    <XAxis />
-                    <YAxis />
-                    <VerticalBarSeries data={data} barWidth = {barwidth}/>
-                </XYPlot>
-
-                <XYPlot height={height} width={width}>
-            
-                    <XAxis />
-                    <YAxis />
-                    <LineSeries data={data} />
-                
-                </XYPlot>
-
-                <XYPlot height={height} width={width}>
-                    <XAxis />
-                    <YAxis />
-                    <MarkSeries data={data} />
-                </XYPlot>
-            </StyledFlexWrapper>
+        <StyledFlexWrapper>
+            <XYPlot height={height} width={width}>
+                <XAxis />
+                <YAxis />
+                <MarkSeries data={data} />
+            </XYPlot>
+        </StyledFlexWrapper>
 
     )
 }
