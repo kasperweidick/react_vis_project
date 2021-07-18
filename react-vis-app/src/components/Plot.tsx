@@ -16,7 +16,6 @@ interface Props {
     data: any,
     height: number,
     width: number,
-    barwidth: number,
 }
   
 const Plot: React.FC<Props> = ({data, height, width}) => {
