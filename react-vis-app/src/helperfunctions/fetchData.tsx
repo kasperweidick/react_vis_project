@@ -5,7 +5,7 @@
 
 const url = "https://kasperweidick.pythonanywhere.com/api/data/all"
 
-const fetchData: any = async () => {
+const fetchData: Object = async (): Promise<void> => {
     try {
         const response = await fetch(url);
         const json = await response.json();
